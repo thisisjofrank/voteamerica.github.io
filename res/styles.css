@@ -10,6 +10,7 @@ body {
   width: auto;
   height: auto;
   min-height: 100%;
+  min-width: 303px;
   font-family: "Lato",sans-serif;
   line-height: 1.42857;
   background-color: rgba(0,0,0,1);
@@ -59,6 +60,10 @@ header {
   padding: 20px;
 }
 
+header img {
+  max-width: 100%;
+}
+
 
 section {
   margin: 20px;
@@ -66,6 +71,15 @@ section {
   background: rgba(255,255,255,0.7);
   color: #444;
   border-radius: 5px;
+}
+
+.tab-pane, .nav-tabs {
+  margin: auto;
+}
+
+.nav-tabs > li {
+  float:none;
+  display:inline-block;
 }
 
 .signup-button {
@@ -95,6 +109,9 @@ h1 {
 h2 {
   font-weight: 300;
 }
+p {
+  font-size: 16px;
+}
 
 @media all and (min-width:481px) {
   p {
@@ -110,16 +127,20 @@ h2 {
   .signup-button {
     display: none;
   }
-  section.problem, section.plan {
-    width: 47%;
+
+  .tab-pane, .nav-tabs {
+    max-width: 75%;
   }
-  section.signup {
+/*  section.problem, section.plan {
+    width: 47%;
+  }*/
+/*  section.signup {
     position: absolute;
     right: 0;
     left: 50%;
     top: 0;
     margin-top: 0;
-  }
+  }*/
   p {
     /*font-size: 22px;*/
   }
